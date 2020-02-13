@@ -17,8 +17,8 @@ if [ -f /usr/local/etc/bash-completion/bash_completion ]; then
 fi
 
 # Load Git completion
-if [ -f ~/.git-completion.zsh ]; then
-  zstyle ':completion:*:*:git:*' script ~/.git-completion.zsh
+if [ -f ~/.git_completion.zsh ]; then
+  zstyle ':completion:*:*:git:*' script ~/.git_completion.zsh
   fpath=(~/.zsh $fpath)
 
   autoload -Uz compinit && compinit

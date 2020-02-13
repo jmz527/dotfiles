@@ -857,8 +857,8 @@ show "Complete!"
 
 # inform "Installing a bash script to support Git CLI tab-completion..." true
 
-# GIT_COMPLETION_URL="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash"
-# GIT_COMPLETION_FILE="$HOME/.git-completion.bash"
+# GIT_COMPLETION_URL="https://raw.githubusercontent.com/git/git/master/contrib/completion/git_completion.bash"
+# GIT_COMPLETION_FILE="$HOME/.git_completion.bash"
 
 # curl -o "$GIT_COMPLETION_FILE" "$GIT_COMPLETION_URL"
 

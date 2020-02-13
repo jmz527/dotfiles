@@ -9,10 +9,10 @@
 #
 # If your script is somewhere else, you can configure it on your ~/.zshrc:
 #
-#  zstyle ':completion:*:*:git:*' script ~/.git-completion.zsh
+#  zstyle ':completion:*:*:git:*' script ~/.git_completion.zsh
 #
 # The recommended way to install this script is to make a copy of it in
-# ~/.zsh/ directory as ~/.zsh/git-completion.zsh and then add the following
+# ~/.zsh/ directory as ~/.zsh/git_completion.zsh and then add the following
 # to your ~/.zshrc file:
 #
 #  fpath=(~/.zsh $fpath)
@@ -31,7 +31,7 @@ if [ -z "$script" ]; then
   local -a locations
   local e
   locations=(
-    $(dirname ${funcsourcetrace[1]%:*})/git-completion.bash
+    $(dirname ${funcsourcetrace[1]%:*})/git_completion.bash
     '/etc/bash_completion.d/git' # fedora, old debian
     '/usr/share/bash-completion/completions/git' # arch, ubuntu, new debian
     '/usr/share/bash-completion/git' # gentoo
