@@ -92,6 +92,8 @@ alias photobooth='open -a "Photo Booth"'
 alias ss='open -a "Screen Sharing"'
 
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
+alias vs='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
 # alias sqll='/usr/bin/sqlite3 -column -header'
 
 
