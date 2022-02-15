@@ -1,15 +1,20 @@
+# _____     _      _____         _   _              _____         ___ _
+# |__   |___| |_   | __  |_ _ ___| |_|_|_____ ___   |     |___ ___|  _|_|___
+# |   __|_ -|   |  |    -| | |   |  _| |     | -_|  |   --| . |   |  _| | . |
+# |_____|___|_|_|  |__|__|___|_|_|_| |_|_|_|_|___|  |_____|___|_|_|_| |_|_  |
+#                                                                       |___|
 # =================
 # Sourced Scripts
 # =================
 
-# Builds the prompt with git branch notifications.
-# if [ -f ~/.bash_prompt.zsh ]; then
-#   source ~/.bash_prompt.zsh
-# fi
-
 # # A welcome prompt with stats for sanity checks
 # if [ -f ~/.welcome_prompt.sh ]; then
 #   source ~/.welcome_prompt.sh
+# fi
+
+# Builds the prompt with git branch notifications.
+# if [ -f ~/.bash_prompt.zsh ]; then
+#   source ~/.bash_prompt.zsh
 # fi
 
 if [ -f /usr/local/etc/bash-completion/bash_completion ]; then
@@ -24,8 +29,8 @@ if [ -f ~/.git_completion.zsh ]; then
   autoload -Uz compinit && compinit
 fi
 
-__git_files () { 
-    _wanted files expl 'local files' _files     
+__git_files () {
+  _wanted files expl 'local files' _files
 }
 
 # --------------------
@@ -97,7 +102,6 @@ PROMPT+="%{$CYAN%}%~ %{$reset_color%}"          # Working directory
 PROMPT+="%{$RED%}% Җ %{$reset_color%} "         # Custom prompt
 PROMPT+="%{$WHITE%}%"                           # Style for input
 
-
 # Show the git branch on the right:
 setopt prompt_subst
 autoload -Uz vcs_info
@@ -117,5 +121,3 @@ vcs_info_wrapper() {
   fi
 }
 RPROMPT=$'$(vcs_info_wrapper)'
-
-
