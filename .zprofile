@@ -81,6 +81,39 @@ alias git_map='git log --graph --full-history --all --color --pretty=format:"%x1
 # SQL aliases
 alias sqlite3='/usr/bin/sqlite3 -column -header'
 
+# =================
+# Methods
+# =================
+
+shortcut() {
+  DEFAULT_TAIL="_branch"
+  str="$1"
+  SCID=$str[(ws:_sc-:)3]
+  echo "SCid: ${SCID}"
+
+  while true; do
+    echo "What should the tail be?"
+    echo "If not, your tag message will be the following: "
+    echo "  $DEFAULT_TAIL"; echo "";
+    read "TAIL?Enter tail here: ";
+
+    if [[ -z "$TAIL" ]]; then
+      TAIL="$DEFAULT_TAIL";
+      break;
+    elif [[ -n "$TAIL" ]]; then
+      break;
+    fi
+
+  done
+
+  if [[ -z $SCID ]]; then
+    echo "\e[1;31mShortcut Issue ID required\e[0m"
+  else
+    git checkout -b "sc$SCID$TAIL"
+    git commit -m "[sc$SCID$TAIL] new branch initial commit" --allow-empty
+  fi
+}
+
 # =====================
 # Resources
 # =====================
