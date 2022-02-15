@@ -21,6 +21,11 @@
 # Aliases
 # ====================
 
+# Example alias. Entering 'classy' into your CLI will open up three tabs in chrome:
+# alias classy="chrome 'http://www.rainymood.com' | \
+#               chrome 'http://www.infinitelooper.com/?v=HMnrl0tmd3k&p=n' | \
+#               chrome 'http://www.infinitelooper.com/?v=fsD1zoI7NYo'"
+
 # LS lists information about files.
 # show slashes for directories.
 alias ls='ls -F'
@@ -68,16 +73,11 @@ alias rogue='lsof -i TCP:3000 -i TCP:4567 -i TCP:8000 -i TCP:8888 -i TCP:6379'
 # Simple python server
 alias pyserv="python -m SimpleHTTPServer | chrome 'http://localhost:8000'"
 
-# Python aliases
-alias dj='python manage.py'
-alias djserver='python manage.py runserver_plus'
-alias djshell='python manage.py shell_plus --ptpython'
-
 # Git aliases
 alias git_map='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 
-# opens three tabs in chrome
-alias classy="chrome 'http://www.rainymood.com' | chrome 'http://www.infinitelooper.com/?v=HMnrl0tmd3k&p=n' | chrome 'http://www.infinitelooper.com/?v=fsD1zoI7NYo'"
+# SQL aliases
+alias sqlite3='/usr/bin/sqlite3 -column -header'
 
 # ================
 # Application Aliases
@@ -88,37 +88,9 @@ alias ff='open -a "FireFox"'
 alias safari='open -a "Safari"'
 alias slack='open -a "Slack"'
 alias photobooth='open -a "Photo Booth"'
-# alias vlc='open -a "VLC"'
+alias vlc='open -a "VLC"'
 alias ss='open -a "Screen Sharing"'
 
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
 alias vs='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
-# alias sqll='/usr/bin/sqlite3 -column -header'
-
-
-# =================
-# rbenv
-# =================
-
-# start rbenv (our Ruby environment and version manager) on open
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# =================
-# node
-# =================
-
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-# [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-# =================
-# Tab Improvements
-# =================
-
-## Tab improvements
-# ## Might not need?
-# bind 'set completion-ignore-case on'
-# # make completions appear immediately after pressing TAB once
-# bind 'set show-all-if-ambiguous on'
-# bind 'TAB: menu-complete'
