@@ -1,21 +1,7 @@
-#  _              _                        __ _ _
-# | |__  __ _ ___| |__    _ __  _ __ ___  / _(_) | ___
-# | '_ \ / _` / __| '_ \  | '_ \| '__/ _ \| |_| | |/ _ \
-# | |_) | (_| \__ \ | | | | |_) | | | (_) |  _| | |  __/
-# |_.__/ \__,_|___/_| |_| | .__/|_|  \___/|_| |_|_|\___|
-#                         |_|
-
-# =====================
-# Resources
-# =====================
-
-# http://zsh.sourceforge.net/Intro/intro_3.html
-
-# Old:
-# http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
-# http://ss64.com/bash/syntax-prompt.html
-# https://dougbarton.us/Bash/Bash-prompts.html
-# http://sage.ucsc.edu/xtal/iterm_tab_customization.html
+# _____    _____         ___ _ _
+# |__   |  |  _  |___ ___|  _|_| |___
+# |   __|  |   __|  _| . |  _| | | -_|
+# |_____|  |__|  |_| |___|_| |_|_|___|
 
 # ====================
 # Aliases
@@ -48,6 +34,22 @@ alias mv='mv -iv'
 alias rm='rm -iv'
 alias mkdir='mkdir -pv'
 
+# ================
+# Application Aliases
+# ================
+
+alias chrome='open -a "Google Chrome"'
+alias ff='open -a "FireFox"'
+alias safari='open -a "Safari"'
+alias slack='open -a "Slack"'
+alias photobooth='open -a "Photo Booth"'
+alias vlc='open -a "VLC"'
+alias ss='open -a "Screen Sharing"'
+
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
+alias vs='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
+
 # =================
 # Additional Aliases
 # =================
@@ -79,18 +81,14 @@ alias git_map='git log --graph --full-history --all --color --pretty=format:"%x1
 # SQL aliases
 alias sqlite3='/usr/bin/sqlite3 -column -header'
 
-# ================
-# Application Aliases
-# ================
+# =====================
+# Resources
+# =====================
 
-alias chrome='open -a "Google Chrome"'
-alias ff='open -a "FireFox"'
-alias safari='open -a "Safari"'
-alias slack='open -a "Slack"'
-alias photobooth='open -a "Photo Booth"'
-alias vlc='open -a "VLC"'
-alias ss='open -a "Screen Sharing"'
+# http://zsh.sourceforge.net/Intro/intro_3.html
 
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
-alias vs='/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron'
+# Old:
+# http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+# http://ss64.com/bash/syntax-prompt.html
+# https://dougbarton.us/Bash/Bash-prompts.html
+# http://sage.ucsc.edu/xtal/iterm_tab_customization.html
