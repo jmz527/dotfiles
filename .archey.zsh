@@ -143,7 +143,7 @@ if [ -a "$logofile" ]
 else
 # The ${foo#  } is a cheat so that it lines up here as well
 # as when run.
-  echo -e "
+  echo "
 ${GREEN#  }                 ###                  ${fieldlist[0]}
 ${GREEN#  }               ####                   ${fieldlist[1]}
 ${GREEN#  }               ###                    ${fieldlist[2]}
