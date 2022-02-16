@@ -26,7 +26,7 @@ alias b='cd ..'
 alias h='history'
 
 # If we make a change to our bash profile we need to reload it
-alias reload="clear; source ~/.bash_profile"
+alias reload="clear; source ~/.zprofile"
 
 # confirm before executing and be verbose
 alias cp='cp -iv'
