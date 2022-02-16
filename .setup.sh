@@ -25,6 +25,7 @@ pause_awhile "Ready to begin?"
 cp -iv .archey.zsh ~/.
 cp -iv .bash_prompt.zsh ~/.
 cp -iv .git_completion.zsh ~/.
+cp -iv .utilities.sh ~/.
 cp -iv .zlogin ~/.
 cp -iv .zlogout ~/.
 cp -iv .zprofile ~/.
