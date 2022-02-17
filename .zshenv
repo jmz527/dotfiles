@@ -4,6 +4,12 @@
 # |_____|___|_|_|  |_____|_|_|\_/
 #
 
+# This is read first and read every time. This is where you set environment variables.
+# I say this is optional because it is geared more toward advanced users where having
+# your $PATH, $PAGER, or $EDITOR variables may be important for things like scripts
+# that get called by launchd. Those run under a non-interactive shell so anything in
+# .zprofile or .zshrc won't get loaded.
+
 # =================
 # Paths
 # =================
