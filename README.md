@@ -1,8 +1,10 @@
 # dotfiles
 shell, git, etc config files
 
+## Order of Operations
+.zshenv → .zprofile → .zshrc → .zlogin → .zlogout
 
-thanks to:
+## Thanks to:
 
 https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
 
