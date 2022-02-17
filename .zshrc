@@ -5,7 +5,7 @@
 #                                                                       |___|
 
 # import utility methods
-. ./.utilities.sh
+. ~/.utilities.sh
 
 # =================
 # Sourced Scripts
