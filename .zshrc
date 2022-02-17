@@ -4,6 +4,10 @@
 # |_____|___|_|_|  |__|__|___|_|_|_| |_|_|_|_|___|  |_____|___|_|_|_| |_|_  |
 #                                                                       |___|
 
+# This sets the environment for interactive shells. This gets loaded after .zprofile.
+# It's typically a place where you "set it and forget it" type of parameters like $PATH,
+# $PROMPT, aliases, and functions you would like to have in both login and interactive shells.
+
 # import utility methods
 . ~/.utilities.sh
 
