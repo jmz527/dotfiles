@@ -44,7 +44,7 @@ pause_awhile "Ready to begin?"
 
 show "${BOLD}Checking for existing files...${RESET}" true
 show "";
-dotfile_check ~/.utilities.sh
+dotfile_check ~/.colors.sh
 dotfile_check ~/.zlogin
 dotfile_check ~/.zlogout
 dotfile_check ~/.zprofile
@@ -64,17 +64,17 @@ fi
 show "${BOLD}Copying files to your home directory...${RESET}" true
 show "";
 
-cp -v .utilities.sh ~/
-cp -v .zlogin ~/
-cp -v .zlogout ~/
-cp -v .zprofile ~/
-cp -v .zshenv ~/
-cp -v .zshrc ~/
+cp -v ./src/.colors.sh ~/
+cp -v ./src/.zlogin ~/
+cp -v ./src/.zlogout ~/
+cp -v ./src/.zprofile ~/
+cp -v ./src/.zshenv ~/
+cp -v ./src/.zshrc ~/
 show "Complete!" true
 
 show "${BOLD}Checking to make sure installation went as planned...${RESET}" true
 check_for_directory ~/
-check_for_file ~/.utilities.sh
+check_for_file ~/.colors.sh
 check_for_file ~/.zlogin
 check_for_file ~/.zlogout
 check_for_file ~/.zprofile
