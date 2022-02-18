@@ -23,8 +23,6 @@ inform "This script will remove several files from your home directory." true
 
 show "${BOLD}Checking for existing files...${RESET}" true
 show "";
-dotfile_check ~/.archey.sh
-dotfile_check ~/.bash_prompt.zsh
 dotfile_check ~/.git_completion.zsh
 dotfile_check ~/.utilities.sh
 dotfile_check ~/.zlogin
@@ -43,8 +41,6 @@ if [[ $FILES_EXIST == true ]]; then
   show "${BOLD}Removing files...${RESET}" true
   inform "Files removed:" true
   show "";
-  rm -fv ~/.archey.sh
-  rm -fv ~/.bash_prompt.zsh
   rm -fv ~/.git_completion.zsh
   rm -fv ~/.utilities.sh
   rm -fv ~/.zlogin
