@@ -15,16 +15,7 @@
 # Sourced Scripts
 # =================
 
-# # A welcome prompt with stats for sanity checks
-# if [ -f ~/.welcome_prompt.sh ]; then
-#   source ~/.welcome_prompt.sh
-# fi
-
-# Builds the prompt with git branch notifications.
-# if [ -f ~/.bash_prompt.zsh ]; then
-#   source ~/.bash_prompt.zsh
-# fi
-
+# Bash completion
 if [ -f /usr/local/etc/bash-completion/bash_completion ]; then
   . /usr/local/etc/bash-completion/bash_completion
 fi
@@ -44,13 +35,10 @@ __git_files () {
 # =================
 # Build the Prompt
 # =================
-NEWLINE=$'\n'
-
-PROMPT="%{$WHITE%}%n%{$reset_color%} "          # Username
-PROMPT+="%{$CYAN%}%~ %{$reset_color%}"          # Working directory
-# PROMPT+="${NEWLINE}"                            # Newline
-PROMPT+="%{$RED%}% Җ %{$reset_color%} "         # Custom prompt
-PROMPT+="%{$WHITE%}%"                           # Style for input
+PROMPT="%{$WHITE%}%n%{$RESET%} "          # Username
+PROMPT+="%{$CYAN%}%~ %{$RESET%}"          # Working directory
+PROMPT+="%{$RED%}% Җ %{$RESET%} "         # Custom prompt
+PROMPT+="%{$WHITE%}%"                     # Style for input
 
 # Show the git branch on the right:
 setopt prompt_subst
@@ -67,7 +55,7 @@ zstyle ':vcs_info:*' enable git cvs svn
 vcs_info_wrapper() {
   vcs_info
   if [ -n "$vcs_info_msg_0_" ]; then
-    echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
+    echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$RESET%}$del"
   fi
 }
 RPROMPT=$'$(vcs_info_wrapper)'
