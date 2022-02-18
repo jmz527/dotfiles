@@ -15,14 +15,14 @@
 #-------------------------------------------------------------------------------
 
 # Run archey for dramatic effect
-./.archey.zsh
+./.archey.sh
 
 show "${BOLD}Welcome to the Dotfiles Setup! ${RESET}"
 inform "This script will configure your shell environment."
 
 pause_awhile "Ready to begin?"
 
-cp -iv .archey.zsh ~/.
+cp -iv .archey.sh ~/.
 cp -iv .bash_prompt.zsh ~/.
 cp -iv .git_completion.zsh ~/.
 cp -iv .utilities.sh ~/.
