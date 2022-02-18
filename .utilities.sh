@@ -72,9 +72,9 @@ pause_awhile () {
 
 pause_and_warn () {
   if [ $2 ]; then echo ""; fi
-  echo -e "${YELLOW}${BOLD}>>>>  $1 ${RESET}"
-  echo -e "${YELLOW}${BOLD}>>>> ${RESET}"
-  read -p "${YELLOW}${BOLD}>>>>  Continue? [Yy] ${RESET} " -n 1 -r
+  echo "${YELLOW}>>>>  $1 ${RESET}"; echo "";
+  echo "${YELLOW}Continue? [Yy]${RESET}"
+  read -p "" -n 1 -r
 
   if [[ ! $REPLY =~ ^[Yy]$ ]]; then
     fail "Exiting..." true
@@ -82,21 +82,21 @@ pause_and_warn () {
   fi
 }
 
-checkForCommand () {
+check_for_command () {
   if ! [ -x "$(which $1)" ]; then
     fail "Error: $1 is not installed." >&2
     exit 1
   fi
 }
 
-checkForFile () {
+check_for_file () {
   if [ ! -f $1 ]; then
     fail "Error: $1 file not found." >&2
     exit 1
   fi
 }
 
-checkForDirectory () {
+check_for_directory () {
   if [ ! -d $1 ]; then
     fail "Error: $1 directory not found." >&2
     exit 1
