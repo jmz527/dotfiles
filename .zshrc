@@ -8,29 +8,13 @@
 # It's typically a place where you "set it and forget it" type of parameters like $PATH,
 # $PROMPT, aliases, and functions you would like to have in both login and interactive shells.
 
-# import utility methods
-. ~/.utilities.sh
-
 # =================
 # Sourced Scripts
 # =================
-
-# Bash completion
-if [ -f /usr/local/etc/bash-completion/bash_completion ]; then
-  . /usr/local/etc/bash-completion/bash_completion
+# utility methods
+if [ -f ~/.utilities.sh ]; then
+  . ~/.utilities.sh
 fi
-
-# Load Git completion
-# if [ -f ~/.git_completion.zsh ]; then
-#   zstyle ':completion:*:*:git:*' script ~/.git_completion.zsh
-#   fpath=(~/.zsh $fpath)
-#
-#   autoload -Uz compinit && compinit
-# fi
-
-__git_files () {
-  _wanted files expl 'local files' _files
-}
 
 # =================
 # Build the Prompt
