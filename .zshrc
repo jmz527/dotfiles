@@ -21,12 +21,12 @@ if [ -f /usr/local/etc/bash-completion/bash_completion ]; then
 fi
 
 # Load Git completion
-if [ -f ~/.git_completion.zsh ]; then
-  zstyle ':completion:*:*:git:*' script ~/.git_completion.zsh
-  fpath=(~/.zsh $fpath)
-
-  autoload -Uz compinit && compinit
-fi
+# if [ -f ~/.git_completion.zsh ]; then
+#   zstyle ':completion:*:*:git:*' script ~/.git_completion.zsh
+#   fpath=(~/.zsh $fpath)
+#
+#   autoload -Uz compinit && compinit
+# fi
 
 __git_files () {
   _wanted files expl 'local files' _files
