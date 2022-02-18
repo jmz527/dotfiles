@@ -11,9 +11,9 @@
 # =================
 # Sourced Scripts
 # =================
-# utility methods
-if [ -f ~/.utilities.sh ]; then
-  . ~/.utilities.sh
+# import colors
+if [ -f ~/.colors.sh ]; then
+  . ~/.colors.sh
 fi
 
 # =================
