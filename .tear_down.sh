@@ -23,7 +23,7 @@ inform "This script will remove several files from your home directory." true
 
 show "${BOLD}Checking for existing files...${RESET}" true
 show "";
-dotfile_check ~/.utilities.sh
+dotfile_check ~/.colors.sh
 dotfile_check ~/.zlogin
 dotfile_check ~/.zlogout
 dotfile_check ~/.zprofile
@@ -41,7 +41,7 @@ if [[ $FILES_EXIST == true ]]; then
   inform "Files removed:" true
   show "";
 
-  rm -fv ~/.utilities.sh
+  rm -fv ~/.colors.sh
   rm -fv ~/.zlogin
   rm -fv ~/.zlogout
   rm -fv ~/.zprofile
