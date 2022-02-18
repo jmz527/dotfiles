@@ -14,12 +14,19 @@
 # We begin!
 #-------------------------------------------------------------------------------
 
-# Run archey for dramatic effect
-./.archey.sh
+# Print flashy title for dramatic effect:
+echo "
+${RED#     }       ____      _   ___ _ _
+${MAGENTA# }      |    \ ___| |_|  _|_| |___ ___
+${CYAN#    }      |  |  | . |  _|  _| | | -_|_ -|
+${GREEN#   }      |____/|___|_| |_| |_|_|___|___|
+${CYAN#    }                          Setup Script
+${RESET}
+";
 
-show "${BOLD}Welcome to the Dotfiles Setup! ${RESET}"
-inform "This script will configure your shell environment."
-
+show "${BOLD}Welcome to the Dotfiles Setup Script! ${RESET}" true
+inform "This script will configure your shell environment." true
+show "";
 pause_awhile "Ready to begin?"
 
 cp -iv .archey.sh ~/.
