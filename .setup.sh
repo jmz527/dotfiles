@@ -44,7 +44,6 @@ pause_awhile "Ready to begin?"
 
 show "${BOLD}Checking for existing files...${RESET}" true
 show "";
-dotfile_check ~/.git_completion.zsh
 dotfile_check ~/.utilities.sh
 dotfile_check ~/.zlogin
 dotfile_check ~/.zlogout
@@ -65,7 +64,6 @@ fi
 show "${BOLD}Copying files to your home directory...${RESET}" true
 show "";
 
-cp -v .git_completion.zsh ~/
 cp -v .utilities.sh ~/
 cp -v .zlogin ~/
 cp -v .zlogout ~/
@@ -76,7 +74,6 @@ show "Complete!" true
 
 show "${BOLD}Checking to make sure installation went as planned...${RESET}" true
 check_for_directory ~/
-check_for_file ~/.git_completion.zsh
 check_for_file ~/.utilities.sh
 check_for_file ~/.zlogin
 check_for_file ~/.zlogout
